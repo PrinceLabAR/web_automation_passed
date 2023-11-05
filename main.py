@@ -39,7 +39,7 @@ def login_button(context):
 def input_number(context):
     wait = WebDriverWait(context.driver, 10)
     phone_number = wait.until(EC.visibility_of_element_located((By.XPATH, "//input[@placeholder='01521xxxxxx']")))
-    phone_number.send_keys("01715491942")
+    phone_number.send_keys("01706668222")
 
     contButtton = wait.until(EC.visibility_of_element_located((By.XPATH, "//button[@type='submit']")))
     contButtton.click()
@@ -49,7 +49,7 @@ def input_number(context):
 def input_pin(context):
     wait = WebDriverWait(context.driver, 10)
     pin = wait.until(EC.visibility_of_element_located((By.XPATH, "//input[@placeholder='00xxx']")))
-    pin.send_keys("00000")
+    pin.send_keys("55449")
 
     context.driver.find_element(By.XPATH, "//button[@type='submit']").click()
 
@@ -107,7 +107,7 @@ def fill_up(context):
     time.sleep(1)
 
     address = wait.until(EC.visibility_of_element_located((By.XPATH, "//input[@placeholder='Address']")))
-    address.send_keys("demra, dhaka")
+    address.send_keys("Mirpur, dhaka")
     time.sleep(1)
 
     create_shop = wait.until(EC.visibility_of_element_located((By.XPATH, "//button[@type='submit']")))
@@ -162,9 +162,9 @@ def add_cust(context):
     name = wait.until(EC.visibility_of_element_located((By.XPATH, "//input[@placeholder='Name']")))
     phone = wait.until(EC.visibility_of_element_located((By.XPATH, "//input[@placeholder='Mobile Number']")))
     address = wait.until(EC.visibility_of_element_located((By.XPATH, "//input[@placeholder='Address']")))
-    name.send_keys('Rafiul')
-    phone.send_keys('01900000000')
-    address.send_keys('Rampura')
+    name.send_keys('Prince')
+    phone.send_keys('01700000000')
+    address.send_keys('Gazipur')
 
 @then('Click the save button')
 def save(context):
@@ -194,10 +194,10 @@ def number_address(context):
     address = wait.until(EC.visibility_of_element_located((By.XPATH, "//input[@placeholder='ঠিকানা']")))
     number.click()
     number.clear()
-    number.send_keys('01900000011')
+    number.send_keys('01700000011')
     address.click()
     address.clear()
-    address.send_keys('Banasree')
+    address.send_keys('Khulna')
 
 @then('Click the save')
 def update_button(context):
