@@ -75,7 +75,7 @@ def fill_up(context):
     time.sleep(3)
 
     keyword = Controller()
-    keyword.type("C:\\Users\\nabil\\Desktop\\HishabeeAutomationTest\\file\\pet.jpg")
+    keyword.type("C:\Users\Pixel\Desktop\275062090-279f3000-95f0-449a-9033-c60f3e0846dd.jpg")
     keyword.press(Key.enter)
     keyword.release(Key.enter)
     time.sleep(3)
